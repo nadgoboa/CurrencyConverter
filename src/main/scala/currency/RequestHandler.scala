@@ -3,6 +3,7 @@ package currency
 import akka.actor.Actor
 import currency.RequestHandler.{Incoming, Result}
 import spray.json._
+import scala.math.round
 
 object RequestHandler {
   case class Incoming(data: String)
@@ -15,7 +16,7 @@ import currency.QueryProtocol._
 
 class RequestHandler extends Actor {
   def compute(from: String, to: String, value: Double) : Double = {
-    value*CurrentState.getRate(to)/CurrentState.getRate(from)
+    round(value*CurrentState.getRate(to)/CurrentState.getRate(from)*100)/100.0
   }
   def receive = {
     case Incoming(jsonStr) =>

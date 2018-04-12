@@ -2653,3 +2653,1523 @@ press ENTER to switch OFF
 {
   "data": []
 }
+2018-04-12 04:57:22,436 INFO  [main] currency.RequestReceiver$ - 
+localhost:8080 ON
+press ENTER to switch OFF
+2018-04-12 04:57:26,280 INFO  [default-akka.actor.default-dispatcher-6] currency.RequestReceiver$ - request:
+{
+  "data": [{
+    "currencyFrom": "EUR",
+    "currencyTo": "RUB",
+    "valueFrom": 1.0
+  }, {
+    "currencyFrom": "USD",
+    "currencyTo": "RUB",
+    "valueFrom": 1.0
+  }]
+}
+2018-04-12 04:57:26,371 INFO  [default-akka.actor.default-dispatcher-6] currency.RequestReceiver$ - answer:
+{
+  "data": [{
+    "currencyFrom": "EUR",
+    "currencyTo": "RUB",
+    "valueFrom": 1.0,
+    "valueTo": 77.304911
+  }, {
+    "currencyFrom": "USD",
+    "currencyTo": "RUB",
+    "valueFrom": 1.0,
+    "valueTo": 62.44701711246535
+  }]
+}
+2018-04-12 04:57:27,002 INFO  [default-akka.actor.default-dispatcher-3] currency.RequestReceiver$ - request:
+{
+  "data": [{
+    "currencyFrom": "MDL",
+    "currencyTo": "RUB",
+    "valueFrom": 500.0
+  }, {
+    "currencyFrom": "USD",
+    "currencyTo": "EUR",
+    "valueFrom": 5.0
+  }, {
+    "currencyFrom": "USD",
+    "currencyTo": "RUB",
+    "valueFrom": 12.0
+  }, {
+    "currencyFrom": "RUB",
+    "currencyTo": "RUB",
+    "valueFrom": 8000.0
+  }, {
+    "currencyFrom": "EUR",
+    "currencyTo": "USD",
+    "valueFrom": 732.0
+  }]
+}
+2018-04-12 04:57:27,006 INFO  [default-akka.actor.default-dispatcher-4] currency.RequestReceiver$ - answer:
+{
+  "data": [{
+    "currencyFrom": "MDL",
+    "currencyTo": "RUB",
+    "valueFrom": 500.0,
+    "valueTo": 1915.5522354759446
+  }, {
+    "currencyFrom": "USD",
+    "currencyTo": "EUR",
+    "valueFrom": 5.0,
+    "valueTo": 4.039007115114934
+  }, {
+    "currencyFrom": "USD",
+    "currencyTo": "RUB",
+    "valueFrom": 12.0,
+    "valueTo": 749.3642053495843
+  }, {
+    "currencyFrom": "RUB",
+    "currencyTo": "RUB",
+    "valueFrom": 8000.0,
+    "valueTo": 8000.0
+  }, {
+    "currencyFrom": "EUR",
+    "currencyTo": "USD",
+    "valueFrom": 732.0,
+    "valueTo": 906.163296
+  }]
+}
+2018-04-12 04:57:27,092 INFO  [default-akka.actor.default-dispatcher-4] currency.RequestReceiver$ - request:
+{
+  "data": [{
+    "currencyFrom": "EUR",
+    "currencyTo": "RUB",
+    "valueFrom": 200.0
+  }, {
+    "currencyFrom": "RUB",
+    "currencyTo": "USD",
+    "valueFrom": 515.34
+  }, {
+    "currencyFrom": "USD",
+    "currencyTo": "RUB",
+    "valueFrom": 1000.0
+  }, {
+    "currencyFrom": "RUB",
+    "currencyTo": "EUR",
+    "valueFrom": 3.5E+7
+  }, {
+    "currencyFrom": "EUR",
+    "currencyTo": "EUR",
+    "valueFrom": 1.0
+  }, {
+    "currencyFrom": "EUR",
+    "currencyTo": "RUB",
+    "valueFrom": 5.0
+  }, {
+    "currencyFrom": "RUB",
+    "currencyTo": "USD",
+    "valueFrom": 120000.0
+  }, {
+    "currencyFrom": "USD",
+    "currencyTo": "RUB",
+    "valueFrom": 50.7
+  }, {
+    "currencyFrom": "RUB",
+    "currencyTo": "EUR",
+    "valueFrom": 2.034543
+  }, {
+    "currencyFrom": "EUR",
+    "currencyTo": "EUR",
+    "valueFrom": 88500.0
+  }]
+}
+2018-04-12 04:57:27,097 INFO  [default-akka.actor.default-dispatcher-2] currency.RequestReceiver$ - answer:
+{
+  "data": [{
+    "currencyFrom": "EUR",
+    "currencyTo": "RUB",
+    "valueFrom": 200.0,
+    "valueTo": 15460.9822
+  }, {
+    "currencyFrom": "RUB",
+    "currencyTo": "USD",
+    "valueFrom": 515.34,
+    "valueTo": 8.252435806051183
+  }, {
+    "currencyFrom": "USD",
+    "currencyTo": "RUB",
+    "valueFrom": 1000.0,
+    "valueTo": 62447.01711246536
+  }, {
+    "currencyFrom": "RUB",
+    "currencyTo": "EUR",
+    "valueFrom": 3.5E+7,
+    "valueTo": 452752.60714031477
+  }, {
+    "currencyFrom": "EUR",
+    "currencyTo": "EUR",
+    "valueFrom": 1.0,
+    "valueTo": 1.0
+  }, {
+    "currencyFrom": "EUR",
+    "currencyTo": "RUB",
+    "valueFrom": 5.0,
+    "valueTo": 386.524555
+  }, {
+    "currencyFrom": "RUB",
+    "currencyTo": "USD",
+    "valueFrom": 120000.0,
+    "valueTo": 1921.6290152639847
+  }, {
+    "currencyFrom": "USD",
+    "currencyTo": "RUB",
+    "valueFrom": 50.7,
+    "valueTo": 3166.0637676019937
+  }, {
+    "currencyFrom": "RUB",
+    "currencyTo": "EUR",
+    "valueFrom": 2.034543,
+    "valueTo": 0.02631841850254507
+  }, {
+    "currencyFrom": "EUR",
+    "currencyTo": "EUR",
+    "valueFrom": 88500.0,
+    "valueTo": 88500.0
+  }]
+}
+2018-04-12 04:57:27,123 INFO  [default-akka.actor.default-dispatcher-8] currency.RequestReceiver$ - request:
+{
+  "data": [{
+    "currencyFrom": "USD",
+    "currencyTo": "RUB",
+    "valueFrom": 3000.0
+  }]
+}
+2018-04-12 04:57:27,125 INFO  [default-akka.actor.default-dispatcher-8] currency.RequestReceiver$ - answer:
+{
+  "data": [{
+    "currencyFrom": "USD",
+    "currencyTo": "RUB",
+    "valueFrom": 3000.0,
+    "valueTo": 187341.05133739606
+  }]
+}
+2018-04-12 04:57:27,149 INFO  [default-akka.actor.default-dispatcher-5] currency.RequestReceiver$ - request:
+{
+  "data": []
+}
+2018-04-12 04:57:27,154 INFO  [default-akka.actor.default-dispatcher-5] currency.RequestReceiver$ - answer:
+{
+  "data": []
+}
+2018-04-12 04:57:35,506 INFO  [main] currency.RequestReceiver$ - 
+localhost:8080 ON
+press ENTER to switch OFF
+2018-04-12 04:57:42,212 INFO  [main] currency.RequestReceiver$ - 
+localhost:8080 ON
+press ENTER to switch OFF
+2018-04-12 04:57:45,335 INFO  [default-akka.actor.default-dispatcher-6] currency.RequestReceiver$ - request:
+{
+  "data": [{
+    "currencyFrom": "EUR",
+    "currencyTo": "RUB",
+    "valueFrom": 1.0
+  }, {
+    "currencyFrom": "USD",
+    "currencyTo": "RUB",
+    "valueFrom": 1.0
+  }]
+}
+2018-04-12 04:57:45,404 INFO  [default-akka.actor.default-dispatcher-6] currency.RequestReceiver$ - answer:
+{
+  "data": [{
+    "currencyFrom": "EUR",
+    "currencyTo": "RUB",
+    "valueFrom": 1.0,
+    "valueTo": 77.304911
+  }, {
+    "currencyFrom": "USD",
+    "currencyTo": "RUB",
+    "valueFrom": 1.0,
+    "valueTo": 62.44701711246535
+  }]
+}
+2018-04-12 04:57:45,760 INFO  [default-akka.actor.default-dispatcher-6] currency.RequestReceiver$ - request:
+{
+  "data": [{
+    "currencyFrom": "MDL",
+    "currencyTo": "RUB",
+    "valueFrom": 500.0
+  }, {
+    "currencyFrom": "USD",
+    "currencyTo": "EUR",
+    "valueFrom": 5.0
+  }, {
+    "currencyFrom": "USD",
+    "currencyTo": "RUB",
+    "valueFrom": 12.0
+  }, {
+    "currencyFrom": "RUB",
+    "currencyTo": "RUB",
+    "valueFrom": 8000.0
+  }, {
+    "currencyFrom": "EUR",
+    "currencyTo": "USD",
+    "valueFrom": 732.0
+  }]
+}
+2018-04-12 04:57:45,762 INFO  [default-akka.actor.default-dispatcher-4] currency.RequestReceiver$ - answer:
+{
+  "data": [{
+    "currencyFrom": "MDL",
+    "currencyTo": "RUB",
+    "valueFrom": 500.0,
+    "valueTo": 1915.5522354759446
+  }, {
+    "currencyFrom": "USD",
+    "currencyTo": "EUR",
+    "valueFrom": 5.0,
+    "valueTo": 4.039007115114934
+  }, {
+    "currencyFrom": "USD",
+    "currencyTo": "RUB",
+    "valueFrom": 12.0,
+    "valueTo": 749.3642053495843
+  }, {
+    "currencyFrom": "RUB",
+    "currencyTo": "RUB",
+    "valueFrom": 8000.0,
+    "valueTo": 8000.0
+  }, {
+    "currencyFrom": "EUR",
+    "currencyTo": "USD",
+    "valueFrom": 732.0,
+    "valueTo": 906.163296
+  }]
+}
+2018-04-12 04:57:45,787 INFO  [default-akka.actor.default-dispatcher-6] currency.RequestReceiver$ - request:
+{
+  "data": [{
+    "currencyFrom": "EUR",
+    "currencyTo": "RUB",
+    "valueFrom": 200.0
+  }, {
+    "currencyFrom": "RUB",
+    "currencyTo": "USD",
+    "valueFrom": 515.34
+  }, {
+    "currencyFrom": "USD",
+    "currencyTo": "RUB",
+    "valueFrom": 1000.0
+  }, {
+    "currencyFrom": "RUB",
+    "currencyTo": "EUR",
+    "valueFrom": 3.5E+7
+  }, {
+    "currencyFrom": "EUR",
+    "currencyTo": "EUR",
+    "valueFrom": 1.0
+  }, {
+    "currencyFrom": "EUR",
+    "currencyTo": "RUB",
+    "valueFrom": 5.0
+  }, {
+    "currencyFrom": "RUB",
+    "currencyTo": "USD",
+    "valueFrom": 120000.0
+  }, {
+    "currencyFrom": "USD",
+    "currencyTo": "RUB",
+    "valueFrom": 50.7
+  }, {
+    "currencyFrom": "RUB",
+    "currencyTo": "EUR",
+    "valueFrom": 2.034543
+  }, {
+    "currencyFrom": "EUR",
+    "currencyTo": "EUR",
+    "valueFrom": 88500.0
+  }]
+}
+2018-04-12 04:57:45,789 INFO  [default-akka.actor.default-dispatcher-6] currency.RequestReceiver$ - answer:
+{
+  "data": [{
+    "currencyFrom": "EUR",
+    "currencyTo": "RUB",
+    "valueFrom": 200.0,
+    "valueTo": 15460.9822
+  }, {
+    "currencyFrom": "RUB",
+    "currencyTo": "USD",
+    "valueFrom": 515.34,
+    "valueTo": 8.252435806051183
+  }, {
+    "currencyFrom": "USD",
+    "currencyTo": "RUB",
+    "valueFrom": 1000.0,
+    "valueTo": 62447.01711246536
+  }, {
+    "currencyFrom": "RUB",
+    "currencyTo": "EUR",
+    "valueFrom": 3.5E+7,
+    "valueTo": 452752.60714031477
+  }, {
+    "currencyFrom": "EUR",
+    "currencyTo": "EUR",
+    "valueFrom": 1.0,
+    "valueTo": 1.0
+  }, {
+    "currencyFrom": "EUR",
+    "currencyTo": "RUB",
+    "valueFrom": 5.0,
+    "valueTo": 386.524555
+  }, {
+    "currencyFrom": "RUB",
+    "currencyTo": "USD",
+    "valueFrom": 120000.0,
+    "valueTo": 1921.6290152639847
+  }, {
+    "currencyFrom": "USD",
+    "currencyTo": "RUB",
+    "valueFrom": 50.7,
+    "valueTo": 3166.0637676019937
+  }, {
+    "currencyFrom": "RUB",
+    "currencyTo": "EUR",
+    "valueFrom": 2.034543,
+    "valueTo": 0.02631841850254507
+  }, {
+    "currencyFrom": "EUR",
+    "currencyTo": "EUR",
+    "valueFrom": 88500.0,
+    "valueTo": 88500.0
+  }]
+}
+2018-04-12 04:57:45,811 INFO  [default-akka.actor.default-dispatcher-4] currency.RequestReceiver$ - request:
+{
+  "data": [{
+    "currencyFrom": "USD",
+    "currencyTo": "RUB",
+    "valueFrom": 3000.0
+  }]
+}
+2018-04-12 04:57:45,817 INFO  [default-akka.actor.default-dispatcher-2] currency.RequestReceiver$ - answer:
+{
+  "data": [{
+    "currencyFrom": "USD",
+    "currencyTo": "RUB",
+    "valueFrom": 3000.0,
+    "valueTo": 187341.05133739606
+  }]
+}
+2018-04-12 04:57:45,824 INFO  [default-akka.actor.default-dispatcher-2] currency.RequestReceiver$ - request:
+{
+  "data": []
+}
+2018-04-12 04:57:45,826 INFO  [default-akka.actor.default-dispatcher-9] currency.RequestReceiver$ - answer:
+{
+  "data": []
+}
+2018-04-12 04:58:15,542 INFO  [main] currency.RequestReceiver$ - 
+localhost:8080 ON
+press ENTER to switch OFF
+2018-04-12 04:58:20,971 INFO  [main] currency.RequestReceiver$ - 
+localhost:8080 ON
+press ENTER to switch OFF
+2018-04-12 04:58:24,475 INFO  [default-akka.actor.default-dispatcher-4] currency.RequestReceiver$ - request:
+{
+  "data": [{
+    "currencyFrom": "EUR",
+    "currencyTo": "RUB",
+    "valueFrom": 1.0
+  }, {
+    "currencyFrom": "USD",
+    "currencyTo": "RUB",
+    "valueFrom": 1.0
+  }]
+}
+2018-04-12 04:58:24,530 INFO  [default-akka.actor.default-dispatcher-4] currency.RequestReceiver$ - answer:
+{
+  "data": [{
+    "currencyFrom": "EUR",
+    "currencyTo": "RUB",
+    "valueFrom": 1.0,
+    "valueTo": 77.304911
+  }, {
+    "currencyFrom": "USD",
+    "currencyTo": "RUB",
+    "valueFrom": 1.0,
+    "valueTo": 62.44701711246535
+  }]
+}
+2018-04-12 04:58:43,285 INFO  [main] currency.RequestReceiver$ - 
+localhost:8080 ON
+press ENTER to switch OFF
+2018-04-12 04:59:09,866 INFO  [main] currency.RequestReceiver$ - 
+localhost:8080 ON
+press ENTER to switch OFF
+2018-04-12 04:59:27,589 INFO  [main] currency.RequestReceiver$ - 
+localhost:8080 ON
+press ENTER to switch OFF
+2018-04-12 05:01:09,772 INFO  [main] currency.RequestReceiver$ - 
+localhost:8080 ON
+press ENTER to switch OFF
+2018-04-12 05:01:14,041 INFO  [default-akka.actor.default-dispatcher-4] currency.RequestReceiver$ - request:
+{
+  "data": [{
+    "currencyFrom": "EUR",
+    "currencyTo": "RUB",
+    "valueFrom": 1.0
+  }, {
+    "currencyFrom": "USD",
+    "currencyTo": "RUB",
+    "valueFrom": 1.0
+  }]
+}
+2018-04-12 05:01:14,151 INFO  [default-akka.actor.default-dispatcher-4] currency.RequestReceiver$ - answer:
+{
+  "data": [{
+    "currencyFrom": "EUR",
+    "currencyTo": "RUB",
+    "valueFrom": 1.0,
+    "valueTo": 77.304911
+  }, {
+    "currencyFrom": "USD",
+    "currencyTo": "RUB",
+    "valueFrom": 1.0,
+    "valueTo": 62.44701711246535
+  }]
+}
+2018-04-12 05:01:14,777 INFO  [default-akka.actor.default-dispatcher-4] currency.RequestReceiver$ - request:
+{
+  "data": [{
+    "currencyFrom": "MDL",
+    "currencyTo": "RUB",
+    "valueFrom": 500.0
+  }, {
+    "currencyFrom": "USD",
+    "currencyTo": "EUR",
+    "valueFrom": 5.0
+  }, {
+    "currencyFrom": "USD",
+    "currencyTo": "RUB",
+    "valueFrom": 12.0
+  }, {
+    "currencyFrom": "RUB",
+    "currencyTo": "RUB",
+    "valueFrom": 8000.0
+  }, {
+    "currencyFrom": "EUR",
+    "currencyTo": "USD",
+    "valueFrom": 732.0
+  }]
+}
+2018-04-12 05:01:14,781 INFO  [default-akka.actor.default-dispatcher-3] currency.RequestReceiver$ - answer:
+{
+  "data": [{
+    "currencyFrom": "MDL",
+    "currencyTo": "RUB",
+    "valueFrom": 500.0,
+    "valueTo": 1915.5522354759446
+  }, {
+    "currencyFrom": "USD",
+    "currencyTo": "EUR",
+    "valueFrom": 5.0,
+    "valueTo": 4.039007115114934
+  }, {
+    "currencyFrom": "USD",
+    "currencyTo": "RUB",
+    "valueFrom": 12.0,
+    "valueTo": 749.3642053495843
+  }, {
+    "currencyFrom": "RUB",
+    "currencyTo": "RUB",
+    "valueFrom": 8000.0,
+    "valueTo": 8000.0
+  }, {
+    "currencyFrom": "EUR",
+    "currencyTo": "USD",
+    "valueFrom": 732.0,
+    "valueTo": 906.163296
+  }]
+}
+2018-04-12 05:01:14,810 INFO  [default-akka.actor.default-dispatcher-2] currency.RequestReceiver$ - request:
+{
+  "data": [{
+    "currencyFrom": "EUR",
+    "currencyTo": "RUB",
+    "valueFrom": 200.0
+  }, {
+    "currencyFrom": "RUB",
+    "currencyTo": "USD",
+    "valueFrom": 515.34
+  }, {
+    "currencyFrom": "USD",
+    "currencyTo": "RUB",
+    "valueFrom": 1000.0
+  }, {
+    "currencyFrom": "RUB",
+    "currencyTo": "EUR",
+    "valueFrom": 3.5E+7
+  }, {
+    "currencyFrom": "EUR",
+    "currencyTo": "EUR",
+    "valueFrom": 1.0
+  }, {
+    "currencyFrom": "EUR",
+    "currencyTo": "RUB",
+    "valueFrom": 5.0
+  }, {
+    "currencyFrom": "RUB",
+    "currencyTo": "USD",
+    "valueFrom": 120000.0
+  }, {
+    "currencyFrom": "USD",
+    "currencyTo": "RUB",
+    "valueFrom": 50.7
+  }, {
+    "currencyFrom": "RUB",
+    "currencyTo": "EUR",
+    "valueFrom": 2.034543
+  }, {
+    "currencyFrom": "EUR",
+    "currencyTo": "EUR",
+    "valueFrom": 88500.0
+  }]
+}
+2018-04-12 05:01:14,814 INFO  [default-akka.actor.default-dispatcher-9] currency.RequestReceiver$ - answer:
+{
+  "data": [{
+    "currencyFrom": "EUR",
+    "currencyTo": "RUB",
+    "valueFrom": 200.0,
+    "valueTo": 15460.9822
+  }, {
+    "currencyFrom": "RUB",
+    "currencyTo": "USD",
+    "valueFrom": 515.34,
+    "valueTo": 8.252435806051183
+  }, {
+    "currencyFrom": "USD",
+    "currencyTo": "RUB",
+    "valueFrom": 1000.0,
+    "valueTo": 62447.01711246536
+  }, {
+    "currencyFrom": "RUB",
+    "currencyTo": "EUR",
+    "valueFrom": 3.5E+7,
+    "valueTo": 452752.60714031477
+  }, {
+    "currencyFrom": "EUR",
+    "currencyTo": "EUR",
+    "valueFrom": 1.0,
+    "valueTo": 1.0
+  }, {
+    "currencyFrom": "EUR",
+    "currencyTo": "RUB",
+    "valueFrom": 5.0,
+    "valueTo": 386.524555
+  }, {
+    "currencyFrom": "RUB",
+    "currencyTo": "USD",
+    "valueFrom": 120000.0,
+    "valueTo": 1921.6290152639847
+  }, {
+    "currencyFrom": "USD",
+    "currencyTo": "RUB",
+    "valueFrom": 50.7,
+    "valueTo": 3166.0637676019937
+  }, {
+    "currencyFrom": "RUB",
+    "currencyTo": "EUR",
+    "valueFrom": 2.034543,
+    "valueTo": 0.02631841850254507
+  }, {
+    "currencyFrom": "EUR",
+    "currencyTo": "EUR",
+    "valueFrom": 88500.0,
+    "valueTo": 88500.0
+  }]
+}
+2018-04-12 05:01:14,828 INFO  [default-akka.actor.default-dispatcher-4] currency.RequestReceiver$ - request:
+{
+  "data": [{
+    "currencyFrom": "USD",
+    "currencyTo": "RUB",
+    "valueFrom": 3000.0
+  }]
+}
+2018-04-12 05:01:14,838 INFO  [default-akka.actor.default-dispatcher-6] currency.RequestReceiver$ - answer:
+{
+  "data": [{
+    "currencyFrom": "USD",
+    "currencyTo": "RUB",
+    "valueFrom": 3000.0,
+    "valueTo": 187341.05133739606
+  }]
+}
+2018-04-12 05:01:14,859 INFO  [default-akka.actor.default-dispatcher-10] currency.RequestReceiver$ - request:
+{
+  "data": []
+}
+2018-04-12 05:01:14,861 INFO  [default-akka.actor.default-dispatcher-11] currency.RequestReceiver$ - answer:
+{
+  "data": []
+}
+2018-04-12 05:01:24,719 INFO  [main] currency.RequestReceiver$ - 
+localhost:8080 ON
+press ENTER to switch OFF
+2018-04-12 05:01:34,065 INFO  [main] currency.RequestReceiver$ - 
+localhost:8080 ON
+press ENTER to switch OFF
+2018-04-12 05:15:08,007 INFO  [main] currency.RequestReceiver$ - 
+localhost:8080 ON
+press ENTER to switch OFF
+2018-04-12 05:15:41,147 INFO  [main] currency.RequestReceiver$ - 
+localhost:8080 ON
+press ENTER to switch OFF
+2018-04-12 05:16:07,499 INFO  [default-akka.actor.default-dispatcher-2] currency.RequestReceiver$ - request:
+{
+  "data": [
+    {
+      "currencyFrom" : "RUB",
+      "currencyTo" : "USD",
+      "valueFrom" : 15.65
+    },
+    {
+      "currencyFrom" : "RUB",
+      "currencyTo" : "EUR",
+      "valueFrom" : 20.0
+    }
+  ]
+}
+2018-04-12 05:16:07,858 INFO  [default-akka.actor.default-dispatcher-2] currency.RequestReceiver$ - answer:
+{
+  "data": [{
+    "currencyFrom": "RUB",
+    "currencyTo": "USD",
+    "valueFrom": 15.65,
+    "valueTo": 0.2505924035269385
+  }, {
+    "currencyFrom": "RUB",
+    "currencyTo": "EUR",
+    "valueFrom": 20.0,
+    "valueTo": 0.25885483501097584
+  }]
+}
+2018-04-12 05:16:51,746 INFO  [default-akka.actor.default-dispatcher-5] currency.RequestReceiver$ - request:
+{
+  "data": [{
+    "currencyFrom": "EUR",
+    "currencyTo": "RUB",
+    "valueFrom": 1.0
+  }, {
+    "currencyFrom": "USD",
+    "currencyTo": "RUB",
+    "valueFrom": 1.0
+  }]
+}
+2018-04-12 05:16:51,748 INFO  [default-akka.actor.default-dispatcher-5] currency.RequestReceiver$ - answer:
+{
+  "data": [{
+    "currencyFrom": "EUR",
+    "currencyTo": "RUB",
+    "valueFrom": 1.0,
+    "valueTo": 77.263382
+  }, {
+    "currencyFrom": "USD",
+    "currencyTo": "RUB",
+    "valueFrom": 1.0,
+    "valueTo": 62.452012829341946
+  }]
+}
+2018-04-12 05:16:52,114 INFO  [default-akka.actor.default-dispatcher-9] currency.RequestReceiver$ - request:
+{
+  "data": [{
+    "currencyFrom": "MDL",
+    "currencyTo": "RUB",
+    "valueFrom": 500.0
+  }, {
+    "currencyFrom": "USD",
+    "currencyTo": "EUR",
+    "valueFrom": 5.0
+  }, {
+    "currencyFrom": "USD",
+    "currencyTo": "RUB",
+    "valueFrom": 12.0
+  }, {
+    "currencyFrom": "RUB",
+    "currencyTo": "RUB",
+    "valueFrom": 8000.0
+  }, {
+    "currencyFrom": "EUR",
+    "currencyTo": "USD",
+    "valueFrom": 732.0
+  }]
+}
+2018-04-12 05:16:52,118 INFO  [default-akka.actor.default-dispatcher-5] currency.RequestReceiver$ - answer:
+{
+  "data": [{
+    "currencyFrom": "MDL",
+    "currencyTo": "RUB",
+    "valueFrom": 500.0,
+    "valueTo": 1915.706598995545
+  }, {
+    "currencyFrom": "USD",
+    "currencyTo": "EUR",
+    "valueFrom": 5.0,
+    "valueTo": 4.041501369260664
+  }, {
+    "currencyFrom": "USD",
+    "currencyTo": "RUB",
+    "valueFrom": 12.0,
+    "valueTo": 749.4241539521033
+  }, {
+    "currencyFrom": "RUB",
+    "currencyTo": "RUB",
+    "valueFrom": 8000.0,
+    "valueTo": 8000.000000000001
+  }, {
+    "currencyFrom": "EUR",
+    "currencyTo": "USD",
+    "valueFrom": 732.0,
+    "valueTo": 905.6040479999999
+  }]
+}
+2018-04-12 05:16:52,326 INFO  [default-akka.actor.default-dispatcher-7] currency.RequestReceiver$ - request:
+{
+  "data": [{
+    "currencyFrom": "EUR",
+    "currencyTo": "RUB",
+    "valueFrom": 200.0
+  }, {
+    "currencyFrom": "RUB",
+    "currencyTo": "USD",
+    "valueFrom": 515.34
+  }, {
+    "currencyFrom": "USD",
+    "currencyTo": "RUB",
+    "valueFrom": 1000.0
+  }, {
+    "currencyFrom": "RUB",
+    "currencyTo": "EUR",
+    "valueFrom": 3.5E+7
+  }, {
+    "currencyFrom": "EUR",
+    "currencyTo": "EUR",
+    "valueFrom": 1.0
+  }, {
+    "currencyFrom": "EUR",
+    "currencyTo": "RUB",
+    "valueFrom": 5.0
+  }, {
+    "currencyFrom": "RUB",
+    "currencyTo": "USD",
+    "valueFrom": 120000.0
+  }, {
+    "currencyFrom": "USD",
+    "currencyTo": "RUB",
+    "valueFrom": 50.7
+  }, {
+    "currencyFrom": "RUB",
+    "currencyTo": "EUR",
+    "valueFrom": 2.034543
+  }, {
+    "currencyFrom": "EUR",
+    "currencyTo": "EUR",
+    "valueFrom": 88500.0
+  }]
+}
+2018-04-12 05:16:52,330 INFO  [default-akka.actor.default-dispatcher-9] currency.RequestReceiver$ - answer:
+{
+  "data": [{
+    "currencyFrom": "EUR",
+    "currencyTo": "RUB",
+    "valueFrom": 200.0,
+    "valueTo": 15452.676399999998
+  }, {
+    "currencyFrom": "RUB",
+    "currencyTo": "USD",
+    "valueFrom": 515.34,
+    "valueTo": 8.251775669876839
+  }, {
+    "currencyFrom": "USD",
+    "currencyTo": "RUB",
+    "valueFrom": 1000.0,
+    "valueTo": 62452.01282934195
+  }, {
+    "currencyFrom": "RUB",
+    "currencyTo": "EUR",
+    "valueFrom": 3.5E+7,
+    "valueTo": 452995.96126920776
+  }, {
+    "currencyFrom": "EUR",
+    "currencyTo": "EUR",
+    "valueFrom": 1.0,
+    "valueTo": 1.0
+  }, {
+    "currencyFrom": "EUR",
+    "currencyTo": "RUB",
+    "valueFrom": 5.0,
+    "valueTo": 386.31690999999995
+  }, {
+    "currencyFrom": "RUB",
+    "currencyTo": "USD",
+    "valueFrom": 120000.0,
+    "valueTo": 1921.4752986091135
+  }, {
+    "currencyFrom": "USD",
+    "currencyTo": "RUB",
+    "valueFrom": 50.7,
+    "valueTo": 3166.3170504476366
+  }, {
+    "currencyFrom": "RUB",
+    "currencyTo": "EUR",
+    "valueFrom": 2.034543,
+    "valueTo": 0.026332564629386795
+  }, {
+    "currencyFrom": "EUR",
+    "currencyTo": "EUR",
+    "valueFrom": 88500.0,
+    "valueTo": 88500.0
+  }]
+}
+2018-04-12 05:16:52,346 INFO  [default-akka.actor.default-dispatcher-7] currency.RequestReceiver$ - request:
+{
+  "data": [{
+    "currencyFrom": "USD",
+    "currencyTo": "RUB",
+    "valueFrom": 3000.0
+  }]
+}
+2018-04-12 05:16:52,348 INFO  [default-akka.actor.default-dispatcher-7] currency.RequestReceiver$ - answer:
+{
+  "data": [{
+    "currencyFrom": "USD",
+    "currencyTo": "RUB",
+    "valueFrom": 3000.0,
+    "valueTo": 187356.03848802584
+  }]
+}
+2018-04-12 05:16:52,359 INFO  [default-akka.actor.default-dispatcher-12] currency.RequestReceiver$ - request:
+{
+  "data": []
+}
+2018-04-12 05:16:52,361 INFO  [default-akka.actor.default-dispatcher-12] currency.RequestReceiver$ - answer:
+{
+  "data": []
+}
+2018-04-12 05:17:04,008 INFO  [default-akka.actor.default-dispatcher-12] currency.RequestReceiver$ - request:
+{
+  "data": [{
+    "currencyFrom": "EUR",
+    "currencyTo": "RUB",
+    "valueFrom": 1.0
+  }, {
+    "currencyFrom": "USD",
+    "currencyTo": "RUB",
+    "valueFrom": 1.0
+  }]
+}
+2018-04-12 05:17:04,012 INFO  [default-akka.actor.default-dispatcher-9] currency.RequestReceiver$ - answer:
+{
+  "data": [{
+    "currencyFrom": "EUR",
+    "currencyTo": "RUB",
+    "valueFrom": 1.0,
+    "valueTo": 77.263382
+  }, {
+    "currencyFrom": "USD",
+    "currencyTo": "RUB",
+    "valueFrom": 1.0,
+    "valueTo": 62.452012829341946
+  }]
+}
+2018-04-12 05:17:04,382 INFO  [default-akka.actor.default-dispatcher-3] currency.RequestReceiver$ - request:
+{
+  "data": [{
+    "currencyFrom": "MDL",
+    "currencyTo": "RUB",
+    "valueFrom": 500.0
+  }, {
+    "currencyFrom": "USD",
+    "currencyTo": "EUR",
+    "valueFrom": 5.0
+  }, {
+    "currencyFrom": "USD",
+    "currencyTo": "RUB",
+    "valueFrom": 12.0
+  }, {
+    "currencyFrom": "RUB",
+    "currencyTo": "RUB",
+    "valueFrom": 8000.0
+  }, {
+    "currencyFrom": "EUR",
+    "currencyTo": "USD",
+    "valueFrom": 732.0
+  }]
+}
+2018-04-12 05:17:04,385 INFO  [default-akka.actor.default-dispatcher-9] currency.RequestReceiver$ - answer:
+{
+  "data": [{
+    "currencyFrom": "MDL",
+    "currencyTo": "RUB",
+    "valueFrom": 500.0,
+    "valueTo": 1915.706598995545
+  }, {
+    "currencyFrom": "USD",
+    "currencyTo": "EUR",
+    "valueFrom": 5.0,
+    "valueTo": 4.041501369260664
+  }, {
+    "currencyFrom": "USD",
+    "currencyTo": "RUB",
+    "valueFrom": 12.0,
+    "valueTo": 749.4241539521033
+  }, {
+    "currencyFrom": "RUB",
+    "currencyTo": "RUB",
+    "valueFrom": 8000.0,
+    "valueTo": 8000.000000000001
+  }, {
+    "currencyFrom": "EUR",
+    "currencyTo": "USD",
+    "valueFrom": 732.0,
+    "valueTo": 905.6040479999999
+  }]
+}
+2018-04-12 05:17:04,403 INFO  [default-akka.actor.default-dispatcher-13] currency.RequestReceiver$ - request:
+{
+  "data": [{
+    "currencyFrom": "EUR",
+    "currencyTo": "RUB",
+    "valueFrom": 200.0
+  }, {
+    "currencyFrom": "RUB",
+    "currencyTo": "USD",
+    "valueFrom": 515.34
+  }, {
+    "currencyFrom": "USD",
+    "currencyTo": "RUB",
+    "valueFrom": 1000.0
+  }, {
+    "currencyFrom": "RUB",
+    "currencyTo": "EUR",
+    "valueFrom": 3.5E+7
+  }, {
+    "currencyFrom": "EUR",
+    "currencyTo": "EUR",
+    "valueFrom": 1.0
+  }, {
+    "currencyFrom": "EUR",
+    "currencyTo": "RUB",
+    "valueFrom": 5.0
+  }, {
+    "currencyFrom": "RUB",
+    "currencyTo": "USD",
+    "valueFrom": 120000.0
+  }, {
+    "currencyFrom": "USD",
+    "currencyTo": "RUB",
+    "valueFrom": 50.7
+  }, {
+    "currencyFrom": "RUB",
+    "currencyTo": "EUR",
+    "valueFrom": 2.034543
+  }, {
+    "currencyFrom": "EUR",
+    "currencyTo": "EUR",
+    "valueFrom": 88500.0
+  }]
+}
+2018-04-12 05:17:04,406 INFO  [default-akka.actor.default-dispatcher-13] currency.RequestReceiver$ - answer:
+{
+  "data": [{
+    "currencyFrom": "EUR",
+    "currencyTo": "RUB",
+    "valueFrom": 200.0,
+    "valueTo": 15452.676399999998
+  }, {
+    "currencyFrom": "RUB",
+    "currencyTo": "USD",
+    "valueFrom": 515.34,
+    "valueTo": 8.251775669876839
+  }, {
+    "currencyFrom": "USD",
+    "currencyTo": "RUB",
+    "valueFrom": 1000.0,
+    "valueTo": 62452.01282934195
+  }, {
+    "currencyFrom": "RUB",
+    "currencyTo": "EUR",
+    "valueFrom": 3.5E+7,
+    "valueTo": 452995.96126920776
+  }, {
+    "currencyFrom": "EUR",
+    "currencyTo": "EUR",
+    "valueFrom": 1.0,
+    "valueTo": 1.0
+  }, {
+    "currencyFrom": "EUR",
+    "currencyTo": "RUB",
+    "valueFrom": 5.0,
+    "valueTo": 386.31690999999995
+  }, {
+    "currencyFrom": "RUB",
+    "currencyTo": "USD",
+    "valueFrom": 120000.0,
+    "valueTo": 1921.4752986091135
+  }, {
+    "currencyFrom": "USD",
+    "currencyTo": "RUB",
+    "valueFrom": 50.7,
+    "valueTo": 3166.3170504476366
+  }, {
+    "currencyFrom": "RUB",
+    "currencyTo": "EUR",
+    "valueFrom": 2.034543,
+    "valueTo": 0.026332564629386795
+  }, {
+    "currencyFrom": "EUR",
+    "currencyTo": "EUR",
+    "valueFrom": 88500.0,
+    "valueTo": 88500.0
+  }]
+}
+2018-04-12 05:17:04,438 INFO  [default-akka.actor.default-dispatcher-15] currency.RequestReceiver$ - request:
+{
+  "data": [{
+    "currencyFrom": "USD",
+    "currencyTo": "RUB",
+    "valueFrom": 3000.0
+  }]
+}
+2018-04-12 05:17:04,439 INFO  [default-akka.actor.default-dispatcher-15] currency.RequestReceiver$ - answer:
+{
+  "data": [{
+    "currencyFrom": "USD",
+    "currencyTo": "RUB",
+    "valueFrom": 3000.0,
+    "valueTo": 187356.03848802584
+  }]
+}
+2018-04-12 05:17:04,453 INFO  [default-akka.actor.default-dispatcher-15] currency.RequestReceiver$ - request:
+{
+  "data": []
+}
+2018-04-12 05:17:04,454 INFO  [default-akka.actor.default-dispatcher-15] currency.RequestReceiver$ - answer:
+{
+  "data": []
+}
+2018-04-12 05:17:25,080 INFO  [main] currency.RequestReceiver$ - 
+localhost:8080 ON
+press ENTER to switch OFF
+2018-04-12 05:19:38,508 INFO  [main] currency.RequestReceiver$ - 
+localhost:8080 ON
+press ENTER to switch OFF
+2018-04-12 05:19:41,804 INFO  [default-akka.actor.default-dispatcher-3] currency.RequestReceiver$ - request:
+{
+  "data": [{
+    "currencyFrom": "EUR",
+    "currencyTo": "RUB",
+    "valueFrom": 1.0
+  }, {
+    "currencyFrom": "USD",
+    "currencyTo": "RUB",
+    "valueFrom": 1.0
+  }]
+}
+2018-04-12 05:19:41,869 INFO  [default-akka.actor.default-dispatcher-3] currency.RequestReceiver$ - answer:
+{
+  "data": [{
+    "currencyFrom": "EUR",
+    "currencyTo": "RUB",
+    "valueFrom": 1.0,
+    "valueTo": 77.263382
+  }, {
+    "currencyFrom": "USD",
+    "currencyTo": "RUB",
+    "valueFrom": 1.0,
+    "valueTo": 62.452012829341946
+  }]
+}
+2018-04-12 05:19:42,453 INFO  [default-akka.actor.default-dispatcher-3] currency.RequestReceiver$ - request:
+{
+  "data": [{
+    "currencyFrom": "MDL",
+    "currencyTo": "RUB",
+    "valueFrom": 500.0
+  }, {
+    "currencyFrom": "USD",
+    "currencyTo": "EUR",
+    "valueFrom": 5.0
+  }, {
+    "currencyFrom": "USD",
+    "currencyTo": "RUB",
+    "valueFrom": 12.0
+  }, {
+    "currencyFrom": "RUB",
+    "currencyTo": "RUB",
+    "valueFrom": 8000.0
+  }, {
+    "currencyFrom": "EUR",
+    "currencyTo": "USD",
+    "valueFrom": 732.0
+  }]
+}
+2018-04-12 05:19:42,457 INFO  [default-akka.actor.default-dispatcher-4] currency.RequestReceiver$ - answer:
+{
+  "data": [{
+    "currencyFrom": "MDL",
+    "currencyTo": "RUB",
+    "valueFrom": 500.0,
+    "valueTo": 1915.706598995545
+  }, {
+    "currencyFrom": "USD",
+    "currencyTo": "EUR",
+    "valueFrom": 5.0,
+    "valueTo": 4.041501369260664
+  }, {
+    "currencyFrom": "USD",
+    "currencyTo": "RUB",
+    "valueFrom": 12.0,
+    "valueTo": 749.4241539521033
+  }, {
+    "currencyFrom": "RUB",
+    "currencyTo": "RUB",
+    "valueFrom": 8000.0,
+    "valueTo": 8000.000000000001
+  }, {
+    "currencyFrom": "EUR",
+    "currencyTo": "USD",
+    "valueFrom": 732.0,
+    "valueTo": 905.6040479999999
+  }]
+}
+2018-04-12 05:19:42,487 INFO  [default-akka.actor.default-dispatcher-3] currency.RequestReceiver$ - request:
+{
+  "data": [{
+    "currencyFrom": "EUR",
+    "currencyTo": "RUB",
+    "valueFrom": 200.0
+  }, {
+    "currencyFrom": "RUB",
+    "currencyTo": "USD",
+    "valueFrom": 515.34
+  }, {
+    "currencyFrom": "USD",
+    "currencyTo": "RUB",
+    "valueFrom": 1000.0
+  }, {
+    "currencyFrom": "RUB",
+    "currencyTo": "EUR",
+    "valueFrom": 3.5E+7
+  }, {
+    "currencyFrom": "EUR",
+    "currencyTo": "EUR",
+    "valueFrom": 1.0
+  }, {
+    "currencyFrom": "EUR",
+    "currencyTo": "RUB",
+    "valueFrom": 5.0
+  }, {
+    "currencyFrom": "RUB",
+    "currencyTo": "USD",
+    "valueFrom": 120000.0
+  }, {
+    "currencyFrom": "USD",
+    "currencyTo": "RUB",
+    "valueFrom": 50.7
+  }, {
+    "currencyFrom": "RUB",
+    "currencyTo": "EUR",
+    "valueFrom": 2.034543
+  }, {
+    "currencyFrom": "EUR",
+    "currencyTo": "EUR",
+    "valueFrom": 88500.0
+  }]
+}
+2018-04-12 05:19:42,491 INFO  [default-akka.actor.default-dispatcher-3] currency.RequestReceiver$ - answer:
+{
+  "data": [{
+    "currencyFrom": "EUR",
+    "currencyTo": "RUB",
+    "valueFrom": 200.0,
+    "valueTo": 15452.676399999998
+  }, {
+    "currencyFrom": "RUB",
+    "currencyTo": "USD",
+    "valueFrom": 515.34,
+    "valueTo": 8.251775669876839
+  }, {
+    "currencyFrom": "USD",
+    "currencyTo": "RUB",
+    "valueFrom": 1000.0,
+    "valueTo": 62452.01282934195
+  }, {
+    "currencyFrom": "RUB",
+    "currencyTo": "EUR",
+    "valueFrom": 3.5E+7,
+    "valueTo": 452995.96126920776
+  }, {
+    "currencyFrom": "EUR",
+    "currencyTo": "EUR",
+    "valueFrom": 1.0,
+    "valueTo": 1.0
+  }, {
+    "currencyFrom": "EUR",
+    "currencyTo": "RUB",
+    "valueFrom": 5.0,
+    "valueTo": 386.31690999999995
+  }, {
+    "currencyFrom": "RUB",
+    "currencyTo": "USD",
+    "valueFrom": 120000.0,
+    "valueTo": 1921.4752986091135
+  }, {
+    "currencyFrom": "USD",
+    "currencyTo": "RUB",
+    "valueFrom": 50.7,
+    "valueTo": 3166.3170504476366
+  }, {
+    "currencyFrom": "RUB",
+    "currencyTo": "EUR",
+    "valueFrom": 2.034543,
+    "valueTo": 0.026332564629386795
+  }, {
+    "currencyFrom": "EUR",
+    "currencyTo": "EUR",
+    "valueFrom": 88500.0,
+    "valueTo": 88500.0
+  }]
+}
+2018-04-12 05:19:42,555 INFO  [default-akka.actor.default-dispatcher-5] currency.RequestReceiver$ - request:
+{
+  "data": [{
+    "currencyFrom": "USD",
+    "currencyTo": "RUB",
+    "valueFrom": 3000.0
+  }]
+}
+2018-04-12 05:19:42,557 INFO  [default-akka.actor.default-dispatcher-5] currency.RequestReceiver$ - answer:
+{
+  "data": [{
+    "currencyFrom": "USD",
+    "currencyTo": "RUB",
+    "valueFrom": 3000.0,
+    "valueTo": 187356.03848802584
+  }]
+}
+2018-04-12 05:19:42,568 INFO  [default-akka.actor.default-dispatcher-6] currency.RequestReceiver$ - request:
+{
+  "data": []
+}
+2018-04-12 05:19:42,571 INFO  [default-akka.actor.default-dispatcher-10] currency.RequestReceiver$ - answer:
+{
+  "data": []
+}
+2018-04-12 05:20:00,082 INFO  [main] currency.RequestReceiver$ - 
+localhost:8080 ON
+press ENTER to switch OFF
+2018-04-12 13:15:32,697 INFO  [main] currency.RequestReceiver$ - 
+localhost:8080 ON
+press ENTER to switch OFF
+2018-04-12 13:15:49,559 INFO  [default-akka.actor.default-dispatcher-4] currency.RequestReceiver$ - request:
+{
+  "data": [{
+    "currencyFrom": "EUR",
+    "currencyTo": "RUB",
+    "valueFrom": 1.0
+  }, {
+    "currencyFrom": "USD",
+    "currencyTo": "RUB",
+    "valueFrom": 1.0
+  }]
+}
+2018-04-12 13:15:49,647 INFO  [default-akka.actor.default-dispatcher-4] currency.RequestReceiver$ - answer:
+{
+  "data": [{
+    "currencyFrom": "EUR",
+    "currencyTo": "RUB",
+    "valueFrom": 1.0,
+    "valueTo": 76.68
+  }, {
+    "currencyFrom": "USD",
+    "currencyTo": "RUB",
+    "valueFrom": 1.0,
+    "valueTo": 62.12
+  }]
+}
+2018-04-12 13:15:50,123 INFO  [default-akka.actor.default-dispatcher-4] currency.RequestReceiver$ - request:
+{
+  "data": [{
+    "currencyFrom": "MDL",
+    "currencyTo": "RUB",
+    "valueFrom": 500.0
+  }, {
+    "currencyFrom": "USD",
+    "currencyTo": "EUR",
+    "valueFrom": 5.0
+  }, {
+    "currencyFrom": "USD",
+    "currencyTo": "RUB",
+    "valueFrom": 12.0
+  }, {
+    "currencyFrom": "RUB",
+    "currencyTo": "RUB",
+    "valueFrom": 8000.0
+  }, {
+    "currencyFrom": "EUR",
+    "currencyTo": "USD",
+    "valueFrom": 732.0
+  }]
+}
+2018-04-12 13:15:50,137 INFO  [default-akka.actor.default-dispatcher-5] currency.RequestReceiver$ - answer:
+{
+  "data": [{
+    "currencyFrom": "MDL",
+    "currencyTo": "RUB",
+    "valueFrom": 500.0,
+    "valueTo": 1902.72
+  }, {
+    "currencyFrom": "USD",
+    "currencyTo": "EUR",
+    "valueFrom": 5.0,
+    "valueTo": 4.05
+  }, {
+    "currencyFrom": "USD",
+    "currencyTo": "RUB",
+    "valueFrom": 12.0,
+    "valueTo": 745.49
+  }, {
+    "currencyFrom": "RUB",
+    "currencyTo": "RUB",
+    "valueFrom": 8000.0,
+    "valueTo": 8000.0
+  }, {
+    "currencyFrom": "EUR",
+    "currencyTo": "USD",
+    "valueFrom": 732.0,
+    "valueTo": 903.48
+  }]
+}
+2018-04-12 13:15:50,154 INFO  [default-akka.actor.default-dispatcher-8] currency.RequestReceiver$ - request:
+{
+  "data": [{
+    "currencyFrom": "EUR",
+    "currencyTo": "RUB",
+    "valueFrom": 200.0
+  }, {
+    "currencyFrom": "RUB",
+    "currencyTo": "USD",
+    "valueFrom": 515.34
+  }, {
+    "currencyFrom": "USD",
+    "currencyTo": "RUB",
+    "valueFrom": 1000.0
+  }, {
+    "currencyFrom": "RUB",
+    "currencyTo": "EUR",
+    "valueFrom": 3.5E+7
+  }, {
+    "currencyFrom": "EUR",
+    "currencyTo": "EUR",
+    "valueFrom": 1.0
+  }, {
+    "currencyFrom": "EUR",
+    "currencyTo": "RUB",
+    "valueFrom": 5.0
+  }, {
+    "currencyFrom": "RUB",
+    "currencyTo": "USD",
+    "valueFrom": 120000.0
+  }, {
+    "currencyFrom": "USD",
+    "currencyTo": "RUB",
+    "valueFrom": 50.7
+  }, {
+    "currencyFrom": "RUB",
+    "currencyTo": "EUR",
+    "valueFrom": 2.034543
+  }, {
+    "currencyFrom": "EUR",
+    "currencyTo": "EUR",
+    "valueFrom": 88500.0
+  }]
+}
+2018-04-12 13:15:50,157 INFO  [default-akka.actor.default-dispatcher-8] currency.RequestReceiver$ - answer:
+{
+  "data": [{
+    "currencyFrom": "EUR",
+    "currencyTo": "RUB",
+    "valueFrom": 200.0,
+    "valueTo": 15335.49
+  }, {
+    "currencyFrom": "RUB",
+    "currencyTo": "USD",
+    "valueFrom": 515.34,
+    "valueTo": 8.3
+  }, {
+    "currencyFrom": "USD",
+    "currencyTo": "RUB",
+    "valueFrom": 1000.0,
+    "valueTo": 62123.81
+  }, {
+    "currencyFrom": "RUB",
+    "currencyTo": "EUR",
+    "valueFrom": 3.5E+7,
+    "valueTo": 456457.67
+  }, {
+    "currencyFrom": "EUR",
+    "currencyTo": "EUR",
+    "valueFrom": 1.0,
+    "valueTo": 1.0
+  }, {
+    "currencyFrom": "EUR",
+    "currencyTo": "RUB",
+    "valueFrom": 5.0,
+    "valueTo": 383.39
+  }, {
+    "currencyFrom": "RUB",
+    "currencyTo": "USD",
+    "valueFrom": 120000.0,
+    "valueTo": 1931.63
+  }, {
+    "currencyFrom": "USD",
+    "currencyTo": "RUB",
+    "valueFrom": 50.7,
+    "valueTo": 3149.68
+  }, {
+    "currencyFrom": "RUB",
+    "currencyTo": "EUR",
+    "valueFrom": 2.034543,
+    "valueTo": 0.03
+  }, {
+    "currencyFrom": "EUR",
+    "currencyTo": "EUR",
+    "valueFrom": 88500.0,
+    "valueTo": 88500.0
+  }]
+}
+2018-04-12 13:15:50,223 INFO  [default-akka.actor.default-dispatcher-3] currency.RequestReceiver$ - request:
+{
+  "data": [{
+    "currencyFrom": "USD",
+    "currencyTo": "RUB",
+    "valueFrom": 3000.0
+  }]
+}
+2018-04-12 13:15:50,225 INFO  [default-akka.actor.default-dispatcher-8] currency.RequestReceiver$ - answer:
+{
+  "data": [{
+    "currencyFrom": "USD",
+    "currencyTo": "RUB",
+    "valueFrom": 3000.0,
+    "valueTo": 186371.42
+  }]
+}
+2018-04-12 13:15:50,238 INFO  [default-akka.actor.default-dispatcher-9] currency.RequestReceiver$ - request:
+{
+  "data": []
+}
+2018-04-12 13:15:50,244 INFO  [default-akka.actor.default-dispatcher-8] currency.RequestReceiver$ - answer:
+{
+  "data": []
+}
