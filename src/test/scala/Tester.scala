@@ -68,7 +68,7 @@ class Tester extends FreeSpec with Matchers{
                                 Query("EUR","RUB",5),
                                 Query("RUB","USD",120000),
                                 Query("USD","RUB",50.7),
-                                Query("RUB","EUR",2.034543),
+                                Query("RUB","EUR",2.03),
                                 Query("EUR","EUR",88500)))
   val answer3 = post(input3.toJson.prettyPrint)
   val output3 = answer3.body.parseJson.convertTo[Data[Answer]]
@@ -89,7 +89,7 @@ class Tester extends FreeSpec with Matchers{
     }
   }
 
-  val input4 = Data[Query](List(Query("USD","RUB",3000)))
+  val input4 = Data[Query](List())
   val answer4 = post(input4.toJson.prettyPrint)
   val output4 = answer4.body.parseJson.convertTo[Data[Answer]]
 
@@ -109,7 +109,7 @@ class Tester extends FreeSpec with Matchers{
     }
   }
 
-  val input5 = Data[Query](List())
+  val input5 = Data[Query](List(Query("USD","RUB",3000)))
   val answer5 = post(input5.toJson.prettyPrint)
   val output5 = answer5.body.parseJson.convertTo[Data[Answer]]
 
