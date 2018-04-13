@@ -129,7 +129,70 @@ class Tester extends FreeSpec with Matchers{
       input5.data(n).valueFrom should be (output5.data(n).valueFrom)
     }
   }
+
+  val answer6 = post("""{"data": [{"currencyFrom": "RUB","currencyTo": "WRONG!","valueFrom": 15.65}]}""".parseJson.prettyPrint)
+  val output6 = answer6.body.parseJson.convertTo[OutcomingData[Answer]]
+
+  "Test 6.1" in {
+    answer6.code should be (200)
+  }
+
+  "Test 6.2" in {
+    output6.data.length should be (0)
+  }
+
+  "Test 6.3" in {
+    output6.errorCode should be (1)
+  }
+
+  val answer7 = post("""{"data": [{"currencyFrom": "RUB","currencyTo": "USD","SOME INCORRECT FIELD NAME": 15.65}]}""".parseJson.prettyPrint)
+  val output7 = answer7.body.parseJson.convertTo[OutcomingData[Answer]]
+
+  "Test 7.1" in {
+    answer7.code should be (200)
+  }
+
+  "Test 7.2" in {
+    output7.data.length should be (0)
+  }
+
+  "Test 7.3" in {
+    output7.errorCode should be (2)
+  }
+
+  val answer8 = post("""{"data": [{"currencyFrom": "RUB","currencyTo": "USD","valueFrom": "STRING INSTEAD OF DOUBLE"}]}""".parseJson.prettyPrint)
+  val output8 = answer8.body.parseJson.convertTo[OutcomingData[Answer]]
+
+  "Test 8.1" in {
+    answer8.code should be (200)
+  }
+
+  "Test 8.2" in {
+    output8.data.length should be (0)
+  }
+
+  "Test 8.3" in {
+    output8.errorCode should be (2)
+  }
+
+  val answer9 = post("""{"data}}stringSsBROKEN!""")
+  val output9 = answer9.body.parseJson.convertTo[OutcomingData[Answer]]
+
+  "Test 9.1" in {
+    answer9.code should be (200)
+  }
+
+  "Test 9.2" in {
+    output9.data.length should be (0)
+  }
+
+  "Test 9.3" in {
+    output9.errorCode should be (3)
+  }
+
 }
+
+
 
 
 
