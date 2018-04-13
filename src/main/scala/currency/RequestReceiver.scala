@@ -18,7 +18,9 @@ object RequestReceiver extends App  {
   implicit val materializer = ActorMaterializer()
 
   private val logger = Logger(LoggerFactory.getLogger(this.getClass))
-  logger.info(s"\nlocalhost:8080 ON\npress ENTER to switch OFF")
+  logger.info(s"\nlocalhost:8080 ON")
+  println("press ENTER to switch OFF")
+
 
 
   val route =
@@ -41,4 +43,5 @@ object RequestReceiver extends App  {
   Http().bindAndHandle(route, "localhost", 8080)
   StdIn.readLine()
   system.terminate()
+  logger.info(s"\nlocalhost:8080 OFF")
 }

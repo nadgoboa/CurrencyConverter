@@ -1,7 +1,8 @@
-import currency.DataProtocol._
+import currency.IncomingDataProtocol._
 import currency.QueryProtocol._
 import currency.AnswerProtocol._
-import currency.{Answer, Data, Query}
+import currency.OutcomingDataProtocol._
+import currency.{Answer, IncomingData, OutcomingData, Query}
 import org.scalatest.{FreeSpec, Matchers}
 import scalaj.http.{Http, HttpOptions}
 import spray.json._
@@ -15,10 +16,10 @@ class Tester extends FreeSpec with Matchers{
   }
 
 
-    val input1 = Data[Query](List(Query("EUR","RUB",1),
+    val input1 = IncomingData[Query](List(Query("EUR","RUB",1),
                                   Query("USD","RUB",1)))
     val answer1 = post(input1.toJson.prettyPrint)
-    val output1 = answer1.body.parseJson.convertTo[Data[Answer]]
+    val output1 = answer1.body.parseJson.convertTo[OutcomingData[Answer]]
 
   "Test 1.1" in {
     answer1.code should be (200)
@@ -36,13 +37,13 @@ class Tester extends FreeSpec with Matchers{
     }
   }
 
-  val input2 = Data[Query](List(Query("MDL","RUB",500),
+  val input2 = IncomingData[Query](List(Query("MDL","RUB",500),
                                 Query("USD","EUR",5),
                                 Query("USD","RUB",12),
                                 Query("RUB","RUB",8000),
                                 Query("EUR","USD",732)))
   val answer2 = post(input2.toJson.prettyPrint)
-  val output2 = answer2.body.parseJson.convertTo[Data[Answer]]
+  val output2 = answer2.body.parseJson.convertTo[OutcomingData[Answer]]
 
   "Test 2.1" in {
     answer2.code should be (200)
@@ -60,7 +61,7 @@ class Tester extends FreeSpec with Matchers{
     }
   }
 
-  val input3 = Data[Query](List(Query("EUR","RUB",200),
+  val input3 = IncomingData[Query](List(Query("EUR","RUB",200),
                                 Query("RUB","USD",515.34),
                                 Query("USD","RUB",1000),
                                 Query("RUB","EUR",35000000),
@@ -71,7 +72,7 @@ class Tester extends FreeSpec with Matchers{
                                 Query("RUB","EUR",2.03),
                                 Query("EUR","EUR",88500)))
   val answer3 = post(input3.toJson.prettyPrint)
-  val output3 = answer3.body.parseJson.convertTo[Data[Answer]]
+  val output3 = answer3.body.parseJson.convertTo[OutcomingData[Answer]]
 
   "Test 3.1" in {
     answer3.code should be (200)
@@ -89,9 +90,9 @@ class Tester extends FreeSpec with Matchers{
     }
   }
 
-  val input4 = Data[Query](List())
+  val input4 = IncomingData[Query](List())
   val answer4 = post(input4.toJson.prettyPrint)
-  val output4 = answer4.body.parseJson.convertTo[Data[Answer]]
+  val output4 = answer4.body.parseJson.convertTo[OutcomingData[Answer]]
 
   "Test 4.1" in {
     answer4.code should be (200)
@@ -109,9 +110,9 @@ class Tester extends FreeSpec with Matchers{
     }
   }
 
-  val input5 = Data[Query](List(Query("USD","RUB",3000)))
+  val input5 = IncomingData[Query](List(Query("USD","RUB",3000)))
   val answer5 = post(input5.toJson.prettyPrint)
-  val output5 = answer5.body.parseJson.convertTo[Data[Answer]]
+  val output5 = answer5.body.parseJson.convertTo[OutcomingData[Answer]]
 
   "Test 5.1" in {
     answer5.code should be (200)
