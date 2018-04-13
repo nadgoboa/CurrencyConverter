@@ -27,7 +27,6 @@ class RequestHandler extends Actor {
         val jsonAst: JsValue = jsonStr.parseJson
         val input: IncomingData[Query] = jsonAst.convertTo[IncomingData[Query]]
         out = OutcomingData(input.data.map(query => Answer(query.currencyFrom, query.currencyTo, query.valueFrom, compute(query.currencyFrom, query.currencyTo, query.valueFrom))),0,"No errors")
-        sender ! Result(out.toJson.prettyPrint)
       } catch{
         case parsExcpt: spray.json.JsonParser.ParsingException => {
           out = OutcomingData(List(),3,"Parsing Error: ".concat(parsExcpt.summary))
