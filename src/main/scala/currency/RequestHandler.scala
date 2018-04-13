@@ -22,30 +22,25 @@ class RequestHandler extends Actor {
   }
   def receive = {
     case Incoming(jsonStr) =>
+      var out: OutcomingData[Answer] = OutcomingData(List(),4,"Undefined Error")
       try{
         val jsonAst: JsValue = jsonStr.parseJson
         val input: IncomingData[Query] = jsonAst.convertTo[IncomingData[Query]]
-        val out: OutcomingData[Answer] = OutcomingData(input.data.map(query => Answer(query.currencyFrom, query.currencyTo, query.valueFrom, compute(query.currencyFrom, query.currencyTo, query.valueFrom))),0,"No errors")
+        out = OutcomingData(input.data.map(query => Answer(query.currencyFrom, query.currencyTo, query.valueFrom, compute(query.currencyFrom, query.currencyTo, query.valueFrom))),0,"No errors")
         sender ! Result(out.toJson.prettyPrint)
       } catch{
         case parsExcpt: spray.json.JsonParser.ParsingException => {
-          val out: OutcomingData[Answer] = OutcomingData(List(),3,"Parsing Error: ".concat(parsExcpt.summary))
-          sender ! Result(out.toJson.prettyPrint)
+          out = OutcomingData(List(),3,"Parsing Error: ".concat(parsExcpt.summary))
         }
         case desExcpt: spray.json.DeserializationException => {
-          val out: OutcomingData[Answer] = OutcomingData(List(),2,"Deserialization Error: ".concat(desExcpt.msg))
-          sender ! Result(out.toJson.prettyPrint)
+          out = OutcomingData(List(),2,"Deserialization Error: ".concat(desExcpt.msg))
         }
         case noElemExcpt: java.util.NoSuchElementException => {
-          val out: OutcomingData[Answer] = OutcomingData(List(),1,"Undefiner Currency Error: ".concat(noElemExcpt.getMessage))
-          sender ! Result(out.toJson.prettyPrint)
-        }
-        case unknown =>{
-          val out: OutcomingData[Answer] = OutcomingData(List(),4,"Undefined Error")
-          sender ! Result(out.toJson.prettyPrint)
+          out =  OutcomingData(List(),1,"Undefiner Currency Error: ".concat(noElemExcpt.getMessage))
         }
       }
       finally{
+        sender ! Result(out.toJson.prettyPrint)
         context.stop(self)
       }
 
