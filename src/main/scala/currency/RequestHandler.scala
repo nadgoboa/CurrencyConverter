@@ -36,7 +36,7 @@ class RequestHandler extends Actor {
           out = OutcomingData(List(),2,"Deserialization Error: ".concat(desExcpt.msg))
         }
         case noElemExcpt: java.util.NoSuchElementException => {
-          out =  OutcomingData(List(),1,"Undefiner Currency Error: ".concat(noElemExcpt.getMessage))
+          out =  OutcomingData(List(),1,"Undefined Currency Error: ".concat(noElemExcpt.getMessage))
         }
       }
       finally{

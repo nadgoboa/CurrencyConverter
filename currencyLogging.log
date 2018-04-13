@@ -1,6 +1,6 @@
-2018-04-13 18:49:32,128 INFO  [main] currency.RequestReceiver$ - 
+2018-04-13 18:57:24,510 INFO  [main] currency.RequestReceiver$ - 
 localhost:8080 ON
-2018-04-13 18:49:42,043 INFO  [default-akka.actor.default-dispatcher-3] currency.RequestReceiver$ - request:
+2018-04-13 18:57:32,003 INFO  [default-akka.actor.default-dispatcher-2] currency.RequestReceiver$ - request:
 {
   "data": [{
     "currencyFrom": "EUR",
@@ -12,7 +12,7 @@ localhost:8080 ON
     "valueFrom": 1.0
   }]
 }
-2018-04-13 18:49:42,092 INFO  [default-akka.actor.default-dispatcher-3] currency.RequestReceiver$ - answer:
+2018-04-13 18:57:32,051 INFO  [default-akka.actor.default-dispatcher-2] currency.RequestReceiver$ - answer:
 {
   "data": [{
     "currencyFrom": "EUR",
@@ -28,7 +28,7 @@ localhost:8080 ON
   "errorCode": 0,
   "errorMessage": "No errors"
 }
-2018-04-13 18:49:42,379 INFO  [default-akka.actor.default-dispatcher-3] currency.RequestReceiver$ - request:
+2018-04-13 18:57:32,441 INFO  [default-akka.actor.default-dispatcher-2] currency.RequestReceiver$ - request:
 {
   "data": [{
     "currencyFrom": "MDL",
@@ -52,7 +52,7 @@ localhost:8080 ON
     "valueFrom": 732.0
   }]
 }
-2018-04-13 18:49:42,382 INFO  [default-akka.actor.default-dispatcher-2] currency.RequestReceiver$ - answer:
+2018-04-13 18:57:32,445 INFO  [default-akka.actor.default-dispatcher-7] currency.RequestReceiver$ - answer:
 {
   "data": [{
     "currencyFrom": "MDL",
@@ -83,7 +83,7 @@ localhost:8080 ON
   "errorCode": 0,
   "errorMessage": "No errors"
 }
-2018-04-13 18:49:42,403 INFO  [default-akka.actor.default-dispatcher-3] currency.RequestReceiver$ - request:
+2018-04-13 18:57:32,465 INFO  [default-akka.actor.default-dispatcher-3] currency.RequestReceiver$ - request:
 {
   "data": [{
     "currencyFrom": "EUR",
@@ -127,7 +127,7 @@ localhost:8080 ON
     "valueFrom": 88500.0
   }]
 }
-2018-04-13 18:49:42,412 INFO  [default-akka.actor.default-dispatcher-4] currency.RequestReceiver$ - answer:
+2018-04-13 18:57:32,468 INFO  [default-akka.actor.default-dispatcher-7] currency.RequestReceiver$ - answer:
 {
   "data": [{
     "currencyFrom": "EUR",
@@ -183,17 +183,17 @@ localhost:8080 ON
   "errorCode": 0,
   "errorMessage": "No errors"
 }
-2018-04-13 18:49:42,425 INFO  [default-akka.actor.default-dispatcher-3] currency.RequestReceiver$ - request:
+2018-04-13 18:57:32,505 INFO  [default-akka.actor.default-dispatcher-9] currency.RequestReceiver$ - request:
 {
   "data": []
 }
-2018-04-13 18:49:42,428 INFO  [default-akka.actor.default-dispatcher-3] currency.RequestReceiver$ - answer:
+2018-04-13 18:57:32,508 INFO  [default-akka.actor.default-dispatcher-3] currency.RequestReceiver$ - answer:
 {
   "data": [],
   "errorCode": 0,
   "errorMessage": "No errors"
 }
-2018-04-13 18:49:42,440 INFO  [default-akka.actor.default-dispatcher-11] currency.RequestReceiver$ - request:
+2018-04-13 18:57:32,520 INFO  [default-akka.actor.default-dispatcher-5] currency.RequestReceiver$ - request:
 {
   "data": [{
     "currencyFrom": "USD",
@@ -201,7 +201,7 @@ localhost:8080 ON
     "valueFrom": 3000.0
   }]
 }
-2018-04-13 18:49:42,441 INFO  [default-akka.actor.default-dispatcher-10] currency.RequestReceiver$ - answer:
+2018-04-13 18:57:32,523 INFO  [default-akka.actor.default-dispatcher-7] currency.RequestReceiver$ - answer:
 {
   "data": [{
     "currencyFrom": "USD",
@@ -212,7 +212,7 @@ localhost:8080 ON
   "errorCode": 0,
   "errorMessage": "No errors"
 }
-2018-04-13 18:49:42,451 INFO  [default-akka.actor.default-dispatcher-11] currency.RequestReceiver$ - request:
+2018-04-13 18:57:32,533 INFO  [default-akka.actor.default-dispatcher-11] currency.RequestReceiver$ - request:
 {
   "data": [{
     "currencyFrom": "RUB",
@@ -220,13 +220,13 @@ localhost:8080 ON
     "valueFrom": 15.65
   }]
 }
-2018-04-13 18:49:42,453 INFO  [default-akka.actor.default-dispatcher-11] currency.RequestReceiver$ - answer:
+2018-04-13 18:57:32,535 INFO  [default-akka.actor.default-dispatcher-11] currency.RequestReceiver$ - answer:
 {
   "data": [],
   "errorCode": 1,
-  "errorMessage": "Undefiner Currency Error: key not found: WRONG!"
+  "errorMessage": "Undefined Currency Error: key not found: WRONG!"
 }
-2018-04-13 18:49:42,463 INFO  [default-akka.actor.default-dispatcher-10] currency.RequestReceiver$ - request:
+2018-04-13 18:57:32,543 INFO  [default-akka.actor.default-dispatcher-12] currency.RequestReceiver$ - request:
 {
   "data": [{
     "currencyFrom": "RUB",
@@ -234,13 +234,13 @@ localhost:8080 ON
     "SOME INCORRECT FIELD NAME": 15.65
   }]
 }
-2018-04-13 18:49:42,465 INFO  [default-akka.actor.default-dispatcher-11] currency.RequestReceiver$ - answer:
+2018-04-13 18:57:32,545 INFO  [default-akka.actor.default-dispatcher-10] currency.RequestReceiver$ - answer:
 {
   "data": [],
   "errorCode": 2,
   "errorMessage": "Deserialization Error: Object is missing required member 'valueFrom'"
 }
-2018-04-13 18:49:42,480 INFO  [default-akka.actor.default-dispatcher-10] currency.RequestReceiver$ - request:
+2018-04-13 18:57:32,552 INFO  [default-akka.actor.default-dispatcher-7] currency.RequestReceiver$ - request:
 {
   "data": [{
     "currencyFrom": "RUB",
@@ -248,19 +248,19 @@ localhost:8080 ON
     "valueFrom": "STRING INSTEAD OF DOUBLE"
   }]
 }
-2018-04-13 18:49:42,484 INFO  [default-akka.actor.default-dispatcher-10] currency.RequestReceiver$ - answer:
+2018-04-13 18:57:32,555 INFO  [default-akka.actor.default-dispatcher-7] currency.RequestReceiver$ - answer:
 {
   "data": [],
   "errorCode": 2,
   "errorMessage": "Deserialization Error: Expected Double as JsNumber, but got \"STRING INSTEAD OF DOUBLE\""
 }
-2018-04-13 18:49:42,492 INFO  [default-akka.actor.default-dispatcher-7] currency.RequestReceiver$ - request:
+2018-04-13 18:57:32,569 INFO  [default-akka.actor.default-dispatcher-7] currency.RequestReceiver$ - request:
 {"data}}stringSsBROKEN!
-2018-04-13 18:49:42,496 INFO  [default-akka.actor.default-dispatcher-5] currency.RequestReceiver$ - answer:
+2018-04-13 18:57:32,574 INFO  [default-akka.actor.default-dispatcher-10] currency.RequestReceiver$ - answer:
 {
   "data": [],
   "errorCode": 3,
   "errorMessage": "Parsing Error: Unexpected end-of-input at input index 23 (line 1, position 24), expected '\"'"
 }
-2018-04-13 18:49:47,724 INFO  [main] currency.RequestReceiver$ - 
+2018-04-13 18:57:37,496 INFO  [main] currency.RequestReceiver$ - 
 localhost:8080 OFF
